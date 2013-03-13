@@ -4,9 +4,9 @@
   <!-- Contenido -->
 
 <div class="four columns">
-	<h4>
-		CONTENT
-	</h4>
+	<h1>
+		HIMEVICO EMPRESA FANTASMA :3
+	</h1>
 </div>
 
   <!-- Fin del contenido -->

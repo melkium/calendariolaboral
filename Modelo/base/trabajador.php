@@ -1,4 +1,6 @@
 <?php
+require_once "../Modelo/BD/perfilBD.php";
+require_once "../Modelo/BD/centroBD.php";
 
 class Trabajador{
 	
@@ -83,7 +85,7 @@ public function getPerfil()
 {
 	if (!$this->perfil)
 	{
-		//relacion
+		self::setPerfil(PerfilBD::obtenerPerfilporTrabajador($this->getId()));
 	}
 	return $this->perfil;
 }
@@ -92,7 +94,7 @@ public function getCentro()
 {
 	if (!$this->centro)
 	{
-		//relacion
+		self::setCentro(CentroBD::obtenerCentroporTrabajador($this->getId()));
 	}
 	return $this->centro;
 }

@@ -46,7 +46,7 @@ public function getTrabajador()
 {
 	if (!$this->trabajador)
 	{
-		//relacion
+		self::setTrabajador(TrabajadorBD::obtenerTrabajadorporAus($this->getId()));
 	}
 	return $this->trabajador;
 }
@@ -55,7 +55,7 @@ public function getTipo()
 {
 	if (!$this->tipo)
 	{
-		//relacion
+		self::setTipo(AustipoBD::obtenerTipoporAusindividual($this->getId()));
 	}
 	return $this->tipo;
 }

@@ -46,7 +46,7 @@ public function getCentro()
 {
 	if (!$this->centro)
 	{
-		//relacion
+		self::setCentro(CentroBD::obtenerCentroporAusGeneral($this->getId()));
 	}
 	return $this->centro;
 }
@@ -55,7 +55,7 @@ public function getTipo()
 {
 	if (!$this->tipo)
 	{
-		//relacion
+		self::setTipo(AustipoBD::obtenerTipoporAusGeneral($this->getId()));
 	}
 	return $this->tipo;
 }

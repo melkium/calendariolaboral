@@ -62,7 +62,7 @@ public function getEmpresa()
 {
 	if (!$this->empresa)
 	{
-		//relacion
+		self::setEmpresa(EmpresaBD::obtenerEmpresaporCentro($this->getId()));
 	}
 	return $this->empresa;
 }

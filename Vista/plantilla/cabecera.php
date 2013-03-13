@@ -1,6 +1,9 @@
 <?php
-$ruta = '/Users/8bdwes10/Sites/fct1';
+
+session_start();
+$ruta = 'C:\wamp\www\proyectos\calendariolaboral';
 set_include_path(get_include_path() . PATH_SEPARATOR . $ruta);
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +25,10 @@ set_include_path(get_include_path() . PATH_SEPARATOR . $ruta);
   <link rel="stylesheet" href="stylesheets/app.css">
   <link rel="stylesheet" href="stylesheets/general_foundicons.css">
   <link rel="stylesheet" href="stylesheets/general_foundicons_ie7.css">
-
+  
+  <script src="javascripts/mensajes.js"></script>
+  <script src="javascripts/ajax.js"></script>
+  <script src="javascripts/ajax_usuario.js"></script>
   <!-- Custom Modernizr for Foundation -->
   <script src="javascripts/foundation/modernizr.foundation.js"></script>
 </head>

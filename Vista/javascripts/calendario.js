@@ -2,7 +2,7 @@
 
 
 
-var Festivos = [[3, 20, 2013], [3, 21, 2013], [3, 22, 2013]];
+var Festivos = [[3, 20, 2013], [3, 21, 2013], [3, 22, 2013], [3, 25, 2013], [3, 26, 2013], [3, 27, 2013]];
 
 
 $(document).ready(function(){
@@ -40,7 +40,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#datepickerTrabajador").datepicker({
         beforeShowDay: nonWorkingDates,
-        numberOfMonths: 1,
+        numberOfMonths: 2,
         firstDay: 1
     });
 
@@ -62,7 +62,7 @@ $(document).ready(function(){
             if (date.getMonth() == Festivos[i][0] - 1 &&
             date.getDate() == Festivos[i][1] &&
             date.getFullYear() == Festivos[i][2]) {
-                return [false,'diaFestivo', Festivos[i][3]];
+                return [true,'diaFestivo', Festivos[i][3]];
             }
         }
 
@@ -89,10 +89,12 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $("#datepickerSeleccionarFecha").datepicker({
+    $("#datepickerSolicitarFecha").datepicker({
         beforeShowDay: nonWorkingDates,
         numberOfMonths: 1,
+        minDate: 0,
         firstDay: 1
+
     });
 
     function nonWorkingDates(date){

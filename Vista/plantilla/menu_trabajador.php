@@ -4,14 +4,14 @@
     <p></p>
       <ul class="nav-bar vertical">
 
-        <li class="active"><a href="empresa.php">Bienvenido @</a>
+        <li class="active"><a href="_trabajador.php">Bienvenido @</a>
         </li>
 
         <li>
-          <a href="_centros.php">Centros de trabajo</a>
+          <a href="calendarioTrabajador.php">Calendario Laboral</a>
         </li>
         <li>
-          <a href="#">Mensajes</a>
+          <a href="solicitarFecha.php">Solicitar fecha</a>
         </li>
 
         <li>

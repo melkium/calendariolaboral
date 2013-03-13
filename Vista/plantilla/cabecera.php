@@ -1,5 +1,5 @@
 <?php
-$ruta = '/Users/8bdwes10/Sites/Proyecto/HIMEVICO';
+$ruta = '/Users/8bdwes10/Sites/calendariolaboral';
 set_include_path(get_include_path() . PATH_SEPARATOR . $ruta);
 ?>
 

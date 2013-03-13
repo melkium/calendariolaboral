@@ -1,5 +1,7 @@
 <?php
+
 require_once "../Modelo/BD/rolBD.php";
+
 
 class Perfil{
 	
@@ -57,7 +59,9 @@ public function getRol()
 {
 	if (!$this->rol)
 	{
+
 		self::setRol(RolBD::obtenerRolporPerfil($this->getId()));
+
 	}
 	return $this->rol;
 }

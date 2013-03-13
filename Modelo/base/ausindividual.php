@@ -46,7 +46,11 @@ public function getTrabajador()
 {
 	if (!$this->trabajador)
 	{
+<<<<<<< HEAD
 		self::setTrabajador(TrabajadorBD::obtenerTrabajadorporAus($this->getId()));
+=======
+		//relacion
+>>>>>>> 940e7eb517648c97f1b8d9d8fe1cc4918b05b209
 	}
 	return $this->trabajador;
 }
@@ -55,7 +59,11 @@ public function getTipo()
 {
 	if (!$this->tipo)
 	{
+<<<<<<< HEAD
 		self::setTipo(AustipoBD::obtenerTipoporAusindividual($this->getId()));
+=======
+		//relacion
+>>>>>>> 940e7eb517648c97f1b8d9d8fe1cc4918b05b209
 	}
 	return $this->tipo;
 }

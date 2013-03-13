@@ -62,7 +62,11 @@ public function getEmpresa()
 {
 	if (!$this->empresa)
 	{
+<<<<<<< HEAD
 		self::setEmpresa(EmpresaBD::obtenerEmpresaporCentro($this->getId()));
+=======
+		//relacion
+>>>>>>> 940e7eb517648c97f1b8d9d8fe1cc4918b05b209
 	}
 	return $this->empresa;
 }

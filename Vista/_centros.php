@@ -9,7 +9,9 @@
 		  	<h5> Centro Uno</h5>
 			<p>COMENTARIOS NECESARIOS</p>
 		 	<a class="round button" href="empresa.php">Trabajadores</a></br></br>
+
 		 	<a class="round button" href="empresa.php">Calendario del centro</a></br></br>
+
 		</div>
 	</div>
 

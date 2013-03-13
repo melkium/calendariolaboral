@@ -1,5 +1,5 @@
 <?php
-$ruta = '/Users/8bdwes10/Sites/fct1';
+$ruta = '/Users/8bdwes10/Sites/Proyecto/HIMEVICO';
 set_include_path(get_include_path() . PATH_SEPARATOR . $ruta);
 ?>
 
@@ -7,7 +7,9 @@ set_include_path(get_include_path() . PATH_SEPARATOR . $ruta);
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+
+<html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
   <meta charset="utf-8" />
@@ -25,13 +27,23 @@ set_include_path(get_include_path() . PATH_SEPARATOR . $ruta);
 
   <!-- Custom Modernizr for Foundation -->
   <script src="javascripts/foundation/modernizr.foundation.js"></script>
+
+
+  <!-- Necesario para el calendario -->
+    <link href="stylesheets/smoothness/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+    <script src="javascripts/jquery-1.9.1.js"></script>
+    <script src="javascripts/jquery-ui-1.10.1.custom.js"></script>
+    <script src="javascripts/calendario.js"></script>
+
+
+
 </head>
 
 <body>
-	<div class="row" style="padding-bottom:30px;">
-		<div class="twelve columns" style="padding: 20px; border-bottom: 3px solid #2ba6cb; border-top: 20px solid #2ba6cb;">
-			<img id="logo" src="img/logo.jpg">
-		</div>
-	</div>
-	
-	
+  <div class="row" style="padding-bottom:30px;">
+    <div class="twelve columns" style="padding: 20px; border-bottom: 3px solid #2ba6cb; border-top: 20px solid #2ba6cb;">
+      <img id="logo" src="img/logo.jpg">
+    </div>
+  </div>
+  
+  

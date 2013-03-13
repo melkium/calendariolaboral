@@ -4,11 +4,11 @@
   <!-- Contenido -->
 
 <div class="four columns">
-	<h1>
-		CONTENT
-	</h1>
-</div>
+<p></p>
 
+    <div id="datepickerCentro"></div>
+
+</div>
   <!-- Fin del contenido -->
 
 <?php include('plantilla/pie.php');?>
